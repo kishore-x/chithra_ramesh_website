@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Sri Mahalakshmi Matric Hr. Sec School - Sankarankovil</title>
+  <meta name="description" content="Welcome to Sri Mahalakshmi Matriculation Higher Secondary School, Sankarankovil. Established in 1995, offering high academic standards, centum results, science laboratories, and sports training in Tenkasi district.">
+  <meta name="keywords" content="Sri Mahalakshmi School, Matriculation School Sankarankovil, Higher Secondary School Tenkasi, Best School in Sankarankovil, Admissions 2026">
+  <meta name="author" content="Sri Mahalakshmi Group">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo_mahalakshmi.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. TOP UTILITY HEADER
+       ========================================================================= -->
+  <header class="top-header" id="top-header">
+    <div class="container">
+      <div class="top-header-links">
+        <a href="#admissions-section"><i class="fa-solid fa-graduation-cap"></i> Admissions</a>
+        <a href="#intro"><i class="fa-solid fa-graduation-cap"></i> Student Life</a>
+        <a href="#chatbot-trigger"><i class="fa-solid fa-user-shield"></i> Parents Corner</a>
+        <a href="#footer"><i class="fa-solid fa-users"></i> Alumni Connect</a>
+      </div>
+      <button class="top-header-menu-btn" id="mobile-menu-toggle">
+        <span>MENU</span> <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. MAIN BRAND HEADER
+       ========================================================================= -->
+  <nav class="main-header" id="main-header">
+    <div class="container">
+      <a href="#" class="brand">
+        <img src="images/logo_mahalakshmi.png" alt="Sri Mahalakshmi School Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">SRI MAHALAKSHMI</span>
+          <span class="brand-subtitle">MATRICULATION HR. SEC. SCHOOL</span>
+        </div>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#intro" class="nav-link">Academics</a></li>
+        <li><a href="#board-results" class="nav-link">Results</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#achievers" class="nav-link">Achievers</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#footer" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       3. HERO SLIDER & ADMISSIONS ENQUIRY SECTION
+       ========================================================================= -->
+  <section class="hero-slider-section" id="hero-slider">
+    <!-- Slider Background Images -->
+    <div class="slider-container" id="slider-container">
+      <!-- Generated dynamically by JS -->
+    </div>
+    
+    <!-- Hero Slider Overlay Content -->
+    <div class="hero-overlay">
+      <div class="container">
+        
+        <!-- Left: Admissions Enquiry Form Card -->
+        <div class="enquiry-card" id="admissions-section">
+          <h3>Admissions Enquiry</h3>
+          <form id="admissions-enquiry-form">
+            <div class="form-group">
+              <input type="text" id="parent-name" class="form-input" placeholder="Parent / Guardian Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="parent-email" class="form-input" placeholder="Parent's Email ID" required>
+            </div>
+            <div class="form-group">
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="tel" id="parent-mobile" class="form-input" placeholder="Parent's Mobile Number" required style="flex-grow: 1;">
+                <button type="button" id="validate-mobile-btn" class="otp-btn">Validate</button>
+              </div>
+            </div>
+            
+            <!-- OTP Input Group (Initially Hidden) -->
+            <div class="form-group" id="otp-group" style="display: none;">
+              <input type="text" id="otp-input" class="form-input" placeholder="Enter OTP Sent to Mobile">
+              <span id="otp-message" style="display: block; font-size: 0.75rem; margin-top: 4px;"></span>
+            </div>
+            
+            <div class="form-group form-row-2">
+              <select id="acad-year" class="form-input" required>
+                <option value="" disabled selected>- Select Academic Year -</option>
+                <option value="2026-2027">2026-2027</option>
+                <option value="2027-2028">2027-2028</option>
+              </select>
+              <select id="grade-select" class="form-input" required>
+                <option value="" disabled selected>- Select Grade -</option>
+                <option value="LKG">LKG / UKG</option>
+                <option value="Primary (I-V)">Grade I - V</option>
+                <option value="Middle (VI-VIII)">Grade VI - VIII</option>
+                <option value="High School (IX-X)">Grade IX - X</option>
+                <option value="Higher Secondary (XI)">Grade XI</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="form-submit-btn">Submit Enquiry</button>
+          </form>
+        </div>
+        
+        <!-- Right: Inspiring Slogan Block -->
+        <div class="slogan-card">
+          <h2 id="slogan-text">AT SRI MAHALAKSHMI MATRIC HR. SEC SCHOOL, WE CREATE A CLIMATE WHICH IS CONDUCIVE TO LEARNING</h2>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Slide Indicator Dots -->
+    <div class="slider-dots" id="slider-dots">
+      <!-- Generated dynamically by JS -->
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. ACADEMIC INTRO SECTION
+       ========================================================================= -->
+  <section class="bg-white-section" id="intro">
+    <div class="container">
+      <div class="intro-grid">
+        
+        <!-- Left: Classroom Image -->
+        <div class="intro-image-container">
+          <img src="images/classroom_students.png" alt="Happy school children raising hands in classroom">
+        </div>
+        
+        <!-- Right: Description -->
+        <div class="intro-text-block">
+          <h2 class="section-title-left">The highest academic standards with a challenging environment</h2>
+          <p class="lead">Inaugurated in 1995, at Sri Mahalakshmi Matriculation Higher Secondary School, Sankarankovil, we are committed to creating a climate which is conducive to learning and ensures overall growth of the students.</p>
+          <p>We emphasize positive values such as respect, honesty, hard work, self-discipline, fairness and caring. Our school is considered among the best educational institutions in Sankarankovil, Tenkasi District. We strive to offer a holistic education that prepares students for board examination success and beyond. We are proud to consistently secure top marks and centums in the State Matriculation Board examinations.</p>
+          <p>Our reputation extends as one of the finest institutions in Tenkasi district, where we continue to set new standards in secondary and higher secondary education through regular workshops, technical partnerships, and extra-curricular training programs.</p>
+          <a href="#" class="btn-primary read-more-btn">Read More</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. LIVE STATS ROW SECTION
+       ========================================================================= -->
+  <section class="stats-section" id="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        
+        <!-- Stat 1: Ratio -->
+        <div class="stat-card">
+          <div class="stat-card-divider"></div>
+          <div class="stat-number" data-target="35" data-type="ratio">0</div>
+          <div class="stat-label">Student-Teacher Ratio</div>
+        </div>
+        
+        <!-- Stat 2: Founded -->
+        <div class="stat-card">
+          <div class="stat-card-divider"></div>
+          <div class="stat-number" data-target="1995" data-type="year">0</div>
+          <div class="stat-label">Founded In</div>
+        </div>
+        
+        <!-- Stat 3: Awards -->
+        <div class="stat-card">
+          <div class="stat-card-divider"></div>
+          <div class="stat-number" data-target="25" data-type="plus">0</div>
+          <div class="stat-label">Awards & Recognitions</div>
+        </div>
+        
+        <!-- Stat 4: Extra-curricular -->
+        <div class="stat-card">
+          <div class="stat-card-divider"></div>
+          <div class="stat-number" data-target="18" data-type="plus">0</div>
+          <div class="stat-label">Extra-curricular Activities</div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. NEW SECTION: BOARD EXAMINATION RESULTS (STD XII)
+       ========================================================================= -->
+  <section class="bg-light-section" id="board-results">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Academic Excellence</h2>
+        <p style="color: var(--text-muted); margin-top: -1.5rem; margin-bottom: 3.5rem;">Academic Year 2023-2024 - STD XII Board Examination Results</p>
+      </div>
+
+      <div class="results-layout">
+        <!-- Left: Poster Image with zoom hover -->
+        <div class="results-poster-box">
+          <img src="images/upload_results_2024.jpg" alt="Sri Mahalakshmi School STD XII Results Poster" class="zoomable-poster" id="results-poster">
+          <div class="poster-overlay-tip"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom Poster</div>
+        </div>
+
+        <!-- Right: Stats and Toppers details -->
+        <div class="results-details-box">
+          <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.6rem; font-weight: 700;">Result Statistics</h3>
+          
+          <div class="results-stats-list">
+            <div class="result-stat-row">
+              <span class="stat-name">Above 580/600 (Toppers)</span>
+              <div class="stat-progress-bar"><div class="progress-fill" style="width: 4%;"></div></div>
+              <span class="stat-val">3 Students (4%)</span>
+            </div>
+            <div class="result-stat-row">
+              <span class="stat-name">Above 550/600</span>
+              <div class="stat-progress-bar"><div class="progress-fill" style="width: 10%;"></div></div>
+              <span class="stat-val">8 Students (10%)</span>
+            </div>
+            <div class="result-stat-row">
+              <span class="stat-name">Above 500/600</span>
+              <div class="stat-progress-bar"><div class="progress-fill" style="width: 32%;"></div></div>
+              <span class="stat-val">25 Students (32%)</span>
+            </div>
+            <div class="result-stat-row">
+              <span class="stat-name">Above 400/600</span>
+              <div class="stat-progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+              <span class="stat-val">67 Students (85%)</span>
+            </div>
+            <div class="result-stat-row">
+              <span class="stat-name">Overall Class Pass Percentage</span>
+              <div class="stat-progress-bar"><div class="progress-fill" style="width: 100%; background-color: #10b981;"></div></div>
+              <span class="stat-val">100% Pass Rate</span>
+            </div>
+            <div class="result-stat-row">
+              <span class="stat-name">Overall Class Average Score</span>
+              <div class="stat-progress-bar"><div class="progress-fill" style="width: 78%; background-color: #3b82f6;"></div></div>
+              <span class="stat-val">78%</span>
+            </div>
+          </div>
+
+          <h3 style="color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; font-weight: 700;">Centum Scorers</h3>
+          <div class="centum-badges">
+            <span class="centum-badge"><i class="fa-solid fa-star"></i> Mathematics: 3 Centums</span>
+            <span class="centum-badge"><i class="fa-solid fa-star"></i> Political Science: 2 Centums</span>
+            <span class="centum-badge"><i class="fa-solid fa-star"></i> Computer Science: 1 Centum</span>
+            <span class="centum-badge"><i class="fa-solid fa-star"></i> Biology: 1 Centum</span>
+            <span class="centum-badge"><i class="fa-solid fa-star"></i> Economics: 1 Centum</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick scrolling list of toppers -->
+      <h3 style="color: var(--primary-color); margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.4rem; font-weight: 700; text-align: center;">Our Top Rankers</h3>
+      <div class="toppers-scroll-container">
+        <div class="topper-mini-card">
+          <div class="topper-rank">#1</div>
+          <div class="topper-info">
+            <div class="topper-name">Siva Shree Harini K</div>
+            <div class="topper-score">583 / 600</div>
+            <div class="topper-sub">Centum in Political Science</div>
+          </div>
+        </div>
+        <div class="topper-mini-card">
+          <div class="topper-rank">#1</div>
+          <div class="topper-info">
+            <div class="topper-name">Kalieswari L</div>
+            <div class="topper-score">583 / 600</div>
+            <div class="topper-sub">Centum in Mathematics</div>
+          </div>
+        </div>
+        <div class="topper-mini-card">
+          <div class="topper-rank">#3</div>
+          <div class="topper-info">
+            <div class="topper-name">Vennila M</div>
+            <div class="topper-score">580 / 600</div>
+            <div class="topper-sub">Centum in Econ. & Pol. Sci.</div>
+          </div>
+        </div>
+        <div class="topper-mini-card">
+          <div class="topper-rank">#4</div>
+          <div class="topper-info">
+            <div class="topper-name">Pravin N</div>
+            <div class="topper-score">577 / 600</div>
+            <div class="topper-sub">Centum in Biology</div>
+          </div>
+        </div>
+        <div class="topper-mini-card">
+          <div class="topper-rank">#5</div>
+          <div class="topper-info">
+            <div class="topper-name">Ganesh Kumar M</div>
+            <div class="topper-score">559 / 600</div>
+            <div class="topper-sub">Outstanding Performer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. ACHIEVEMENTS SECTION
+       ========================================================================= -->
+  <section class="bg-white-section achievements-section" id="achievements">
+    <div class="container">
+      <div class="achievements-grid">
+        
+        <!-- Left Introduction Column -->
+        <div class="achievements-intro">
+          <h2 class="section-title-left">Achievements</h2>
+          <h3>The achievements of Sri Mahalakshmi Matriculation School</h3>
+          <p>Sri Mahalakshmi Matric Hr. Sec School has won many awards and recognitions at zonal, district, and state levels for excellence in academic results, sports events, and cultural competitions.</p>
+          <a href="#" class="btn-primary know-more-btn">Read More</a>
+        </div>
+        
+        <!-- Right Interactive Cards -->
+        <div class="achievements-cards">
+          
+          <!-- Card 1: International School Award -->
+          <div class="award-card">
+            <div class="award-image-wrapper">
+              <img src="images/international_award.png" alt="International School Award ceremony">
+            </div>
+            <div class="award-info">
+              <h4 class="award-title">Academic Excellence Shield</h4>
+              <p class="award-subtitle">Awarded consecutively by the district education office for securing centum scores in high school board examinations.</p>
+            </div>
+          </div>
+          
+          <!-- Card 2: Education World Shield -->
+          <div class="award-card">
+            <div class="award-image-wrapper">
+              <img src="images/education_world_award.png" alt="Education World Award group photo">
+            </div>
+            <div class="award-info">
+              <h4 class="award-title">Education Excellence Award</h4>
+              <p class="award-subtitle">Recognized at regional forums for quality laboratory integrations and teacher-training certifications.</p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. TOP ACHIEVERS SECTION
+       ========================================================================= -->
+  <section class="bg-light-section" id="achievers">
+    <div class="container">
+      <div class="achievers-layout">
+        
+        <!-- Left: 4-Card Grid of Achievers -->
+        <div class="achievers-grid-container">
+          
+          <!-- Achiever 1: Real photo of student group with certificates -->
+          <div class="achiever-card span-col-2">
+            <div class="achiever-img-box" style="height: 280px;">
+              <img src="images/upload_group_achievers.png" alt="Sri Mahalakshmi Merit Winners Group Photo">
+            </div>
+            <div class="achiever-details">
+              <h4 class="achiever-name">SMHS District Merit Award Winners</h4>
+              <div class="achiever-meta">
+                <strong>Event Name:</strong> Zonal & District Academic Merit Meet<br>
+                <strong>Medal/Award:</strong> Students standing proud with their medals and certificates of distinction.
+              </div>
+            </div>
+          </div>
+          
+          <!-- Achiever 2: Siva Shree Harini K -->
+          <div class="achiever-card">
+            <div class="achiever-img-box">
+              <img src="images/achiever1.png" alt="Siva Shree Harini K">
+            </div>
+            <div class="achiever-details">
+              <h4 class="achiever-name">Siva Shree Harini K</h4>
+              <div class="achiever-meta">
+                <strong>Subject Score:</strong> 583 / 600 Board Topper<br>
+                <strong>Centum Scorer:</strong> Political Science
+              </div>
+            </div>
+          </div>
+          
+          <!-- Achiever 3: Kalieswari L (SVG medal/trophy) -->
+          <div class="achiever-card">
+            <div class="achiever-img-box">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#f8fafc" stroke="#1b3f8b" stroke-width="2"/>
+                <path d="M50 25C40 25 35 32 35 42C35 52 42 58 50 58C58 58 65 52 65 42C65 32 60 25 50 25Z" fill="#e06b20"/>
+                <path d="M42 58L38 75H62L58 58H42Z" fill="#1b3f8b"/>
+                <path d="M35 75H65V78H35V75Z" fill="#1b3f8b"/>
+              </svg>
+            </div>
+            <div class="achiever-details">
+              <h4 class="achiever-name">Kalieswari L</h4>
+              <div class="achiever-meta">
+                <strong>Subject Score:</strong> 583 / 600 Board Topper<br>
+                <strong>Centum Scorer:</strong> Mathematics
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Right: Text Description Column -->
+        <div class="achievers-info">
+          <h2 class="section-title-left">Top Achievers</h2>
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.4rem;">Pillars of Pride at Sri Mahalakshmi School</h3>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">Recognizing our high-achieving board exam scholars and active participants who secure laurels in curricular and co-curricular fields representing our institution.</p>
+          <a href="#" class="btn-primary know-more-btn">Read More</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. RECENT EVENTS AND ANNOUNCEMENTS (Real events like Sangamam 2024)
+       ========================================================================= -->
+  <section class="bg-white-section" id="events">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Recent Events & Announcements</h2>
+        <p style="color: var(--text-muted); margin-top: -1.5rem; margin-bottom: 3.5rem;">Recent events and announcements of Sri Mahalakshmi Matriculation Higher Secondary School, Sankarankovil</p>
+      </div>
+      
+      <div class="events-grid">
+        
+        <!-- Event 1: Sangamam 2024 Stage Shows -->
+        <div class="event-card">
+          <div class="event-image-box">
+            <img src="images/upload_sangamam_collage1.jpg" alt="Sangamam 2024 Cultural Performances">
+          </div>
+          <div class="event-content">
+            <h4 class="event-title">Sangamam 2024 - Annual Day</h4>
+            <div class="event-date">February 20, 2024</div>
+            <p class="event-desc">A grand annual cultural day festival featuring traditional music choirs, guest welcomes, lamp lighting, and prize distributions for students.</p>
+          </div>
+        </div>
+        
+        <!-- Event 2: Sangamam 2024 Kids Dances -->
+        <div class="event-card">
+          <div class="event-image-box">
+            <img src="images/upload_sangamam_collage2.jpg" alt="Sangamam 2024 Kids Performances">
+          </div>
+          <div class="event-content">
+            <h4 class="event-title">Sangamam 2024 - Kids & Arts</h4>
+            <div class="event-date">February 20, 2024</div>
+            <p class="event-desc">Our young primary school and kindergarten stars showcased theatrical dances, group choreographies, and cultural shows on a grand stage setting.</p>
+          </div>
+        </div>
+        
+        <!-- Event 3: Leadership and Team Building for Teachers -->
+        <div class="event-card">
+          <div class="event-image-box">
+            <img src="images/upload_teachers_seminar.jpg" alt="Leadership & Team Building Seminar">
+          </div>
+          <div class="event-content">
+            <h4 class="event-title">Teacher Training Seminar</h4>
+            <div class="event-date">June 14, 2024</div>
+            <p class="event-desc">Continuous professional development seminar on "Leadership & Team Building" conducted by resource person Mrs. Ashwathi Ashokan for our teachers.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="text-center">
+        <a href="#" class="btn-primary know-more-btn">Know More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. NEWS SECTION
+       ========================================================================= -->
+  <section class="bg-light-section" id="news">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">News</h2>
+        <p class="news-title-desc">What's New At Sri Mahalakshmi Matriculation Higher Secondary School</p>
+      </div>
+      
+      <div class="news-grid">
+        
+        <!-- News Card 1 -->
+        <div class="news-card">
+          <div>
+            <div class="news-text-logo">THE HINDU</div>
+            <h4 class="news-headline">Sangamam 2024 Celebrations</h4>
+            <div class="news-date">February 22, 2024</div>
+            <p class="news-body">The local edition covered the grand cultural night 'Sangamam 2024' of Sri Mahalakshmi Matric School, highlighting the performances of students in traditional arts and the distribution of academic achievement shields.</p>
+          </div>
+          <a href="#" class="btn-primary know-more-btn" style="align-self: flex-start;">Read Article</a>
+        </div>
+        
+        <!-- News Card 2 -->
+        <div class="news-card">
+          <div>
+            <div class="news-text-logo" style="font-style: italic; font-weight: 800;">The Indian Express</div>
+            <h4 class="news-headline">Teacher Training Initiatives</h4>
+            <div class="news-date">June 15, 2024</div>
+            <p class="news-body">Continuing its focus on quality education, Sri Mahalakshmi School hosted an intensive workshop on modern team building and digital instruction tools for all higher secondary teaching faculty.</p>
+          </div>
+          <a href="#" class="btn-primary know-more-btn" style="align-self: flex-start;">Read Article</a>
+        </div>
+        
+        <!-- News Card 3 -->
+        <div class="news-card">
+          <div>
+            <div class="news-text-logo" style="letter-spacing: -1px;">THE TIMES OF INDIA</div>
+            <h4 class="news-headline">100% Pass in Board Examinations</h4>
+            <div class="news-date">May 12, 2024</div>
+            <p class="news-body">Sri Mahalakshmi Matriculation Higher Secondary School, Sankarankovil secured an outstanding 100% pass result in the Class XII State Board Exams with numerous centums in mathematics and political science.</p>
+          </div>
+          <a href="#" class="btn-primary know-more-btn" style="align-self: flex-start;">Read Article</a>
+        </div>
+        
+      </div>
+      
+      <div class="text-center">
+        <a href="#" class="btn-primary know-more-btn">Know More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. PREMIUM FOOTER
+       ========================================================================= -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Useful Links -->
+        <div>
+          <h4 class="footer-col-title">Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="#intro"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="#admissions-section"><i class="fa-solid fa-angle-right"></i> Admission Process</a></li>
+            <li><a href="#board-results"><i class="fa-solid fa-angle-right"></i> Board Results</a></li>
+            <li><a href="#achievers"><i class="fa-solid fa-angle-right"></i> Toppers Feed</a></li>
+            <li><a href="#events"><i class="fa-solid fa-angle-right"></i> Events & Gallery</a></li>
+            <li><a href="#footer"><i class="fa-solid fa-angle-right"></i> Contact Office</a></li>
+          </ul>
+        </div>
+        
+        <!-- Col 2: Academics -->
+        <div>
+          <h4 class="footer-col-title">Academics</h4>
+          <ul class="footer-links">
+            <li><a href="#intro"><i class="fa-solid fa-angle-right"></i> Kindergarten (LKG/UKG)</a></li>
+            <li><a href="#intro"><i class="fa-solid fa-angle-right"></i> Primary Education (I-V)</a></li>
+            <li><a href="#intro"><i class="fa-solid fa-angle-right"></i> Middle School (VI-VIII)</a></li>
+            <li><a href="#intro"><i class="fa-solid fa-angle-right"></i> High School (IX-X)</a></li>
+            <li><a href="#intro"><i class="fa-solid fa-angle-right"></i> Higher Secondary (XI-XII)</a></li>
+            <li><a href="#intro"><i class="fa-solid fa-angle-right"></i> State Board Syllabus</a></li>
+          </ul>
+        </div>
+        
+        <!-- Col 3: Newsletter & App download -->
+        <div>
+          <h4 class="footer-col-title">Newsletter</h4>
+          <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to our newsletter!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <button type="submit" class="newsletter-btn">Send</button>
+          </form>
+          
+          <h4 class="footer-col-title" style="margin-top: 1.5rem; font-size: 0.95rem;">MAHALAKSHMI PARENT APP</h4>
+          <div class="app-badges">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" class="app-badge-img"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" class="app-badge-img"></a>
+          </div>
+        </div>
+        
+        <!-- Col 4: Social media connect -->
+        <div>
+          <h4 class="footer-col-title">Get Social</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Footer Brands -->
+      <h4 class="footer-brands-title">OUR BRANDS</h4>
+      <div class="footer-brands-list">
+        <a href="#">Sri Mahalakshmi Matriculation School (Sankarankovil)</a> |
+        <a href="#">Sri Mahalakshmi Primary Academy</a> |
+        <a href="#">Sri Mahalakshmi Montessori House</a> |
+        <a href="#">Sri Mahalakshmi Sports & Arts Club</a>
+      </div>
+      
+      <!-- School locations list -->
+      <h4 class="footer-locations-title">SCHOOL CAMPUS</h4>
+      <p class="footer-locations-text">
+        Kalugumalai Road, Sankarankovil, Tenkasi District, Tamil Nadu - 627756
+      </p>
+      
+      <hr class="footer-divider">
+      
+      <!-- Footer bottom copyright details -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-links">
+          <a href="#">Site Map</a> |
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div>
+          Copyright 2026 Sri Mahalakshmi Group, All Rights Reserved.
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       12. FLOATING CHAT WIDGET
+       ========================================================================= -->
+  <div class="chat-widget-container" id="chatbot-trigger">
+    <!-- Chat Trigger Bubble -->
+    <div class="chat-bubble" id="chat-bubble">
+      <i class="fa-solid fa-comments"></i>
+    </div>
+    
+    <!-- Chatbot Window -->
+    <div class="chat-window" id="chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-bot-avatar">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <div class="chat-bot-title">SMHS Support</div>
+            <div class="chat-bot-status">Online</div>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chat-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      
+      <div class="chat-body" id="chat-body">
+        <div class="chat-message bot">
+          Hello! Welcome to Sri Mahalakshmi Matric Hr. Sec School support. How can I help you today?
+        </div>
+        <div class="chat-options">
+          <button class="chat-option-btn" data-value="admissions">Admissions 2026-27</button>
+          <button class="chat-option-btn" data-value="fees">Fee Structure Info</button>
+          <button class="chat-option-btn" data-value="location">Campus Location</button>
+          <button class="chat-option-btn" data-value="contact">Contact Information</button>
+        </div>
+      </div>
+      
+      <form class="chat-footer" id="chat-form">
+        <input type="text" class="chat-input" id="chat-input" placeholder="Type a message..." autocomplete="off">
+        <button type="submit" class="chat-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       13. PREMIUM GENERAL MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="general-modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">School Notification</h3>
+        <button class="modal-close" id="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body-text">
+        <!-- Content inserted dynamically via JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" id="modal-ok-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>

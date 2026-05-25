@@ -45,6 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       image: 'images/upload_sangamam_collage2.jpg',
       text: 'OUR TALENTED YOUNG MINDS LIGHTING UP THE STAGE WITH VIBRANT CULTURAL PERFORMANCES'
+    },
+    {
+      image: 'images/sangamam_collage3.jpg',
+      text: 'SANGAMAM 2024: AN UNFORGETTABLE EVENING OF CLASSICAL DANCE, DRAMA, AND STUDENT EXCELLENCE'
+    },
+    {
+      image: 'images/sangamam_collage4.jpg',
+      text: 'CELEBRATING OUR STUDENTS\' CREATIVITY, TALENT, AND SPIRIT AT SANGAMAM 2024'
+    },
+    {
+      image: 'images/sangamam_collage5.jpg',
+      text: 'SANGAMAM 2024: WHERE EVERY PERFORMANCE TELLS THE STORY OF PASSION AND DEDICATION'
     }
   ];
 

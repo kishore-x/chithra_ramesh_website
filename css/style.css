@@ -560,10 +560,9 @@ button {
 
 /* ACHIEVEMENTS SECTION */
 .achievements-grid {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 4rem;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .achievements-intro h3 {
@@ -580,7 +579,7 @@ button {
 
 .achievements-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 

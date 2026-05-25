@@ -490,12 +490,12 @@ document.addEventListener('DOMContentLoaded', () => {
                    <p>Our curriculum integrates regular textbooks with digital classrooms, active science experiments, computer laboratory projects, and sports mentorship programs.</p>`;
       } else if (parentSection && parentSection.classList.contains('achievements-section')) {
         title = "School Achievements & Awards";
-        content = `<p>Sri Mahalakshmi School has been recognized locally and nationally for educational innovation, school administration, and community engagement projects.</p>
-                   <p><strong>Awards list:</strong></p>
+        content = `<p>Sri Mahalakshmi School has been recognized locally and nationally for educational innovation, school administration, experiential learning methodologies, and community engagement projects.</p>
+                   <p><strong>Awards & Recognitions:</strong></p>
                    <ul>
-                     <li><strong>National School Excellence Award:</strong> Awarded for outstanding sports and science project curriculum.</li>
-                     <li><strong>District Sports Championship Banner:</strong> Consecutively won for basketball and athletic track tournaments in Tenkasi District.</li>
-                     <li><strong>100% Pass Merit Shield:</strong> Awarded by the Education Department of Tamil Nadu.</li>
+                     <li><strong>Best School in Experiential Learning Award:</strong> Awarded to our school leadership and faculty for excellence in hands-on and practice-based learning systems.</li>
+                     <li><strong>Academic Excellence Shield:</strong> Awarded consecutively by the district education office for board examination success and centum scores.</li>
+                     <li><strong>Education Excellence Award:</strong> Recognized at regional forums for quality laboratory integrations and teacher-training certifications.</li>
                    </ul>`;
       } else if (parentSection && parentSection.id === 'events') {
         title = "Recent Events Detail";
@@ -513,19 +513,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // =========================================================================
-  // 7. BOARD RESULTS POSTER ZOOM
-  // =========================================================================
-  const resultsPoster = document.getElementById('results-poster');
-  if (resultsPoster) {
-    resultsPoster.addEventListener('click', () => {
-      showCustomModal(
-        'STD XII Board Exam Results 2023-2024',
-        `<div style="text-align: center; overflow-y: auto; max-height: 70vh;">
-          <img src="images/upload_results_2024.jpg" alt="Sri Mahalakshmi School STD XII Results Poster" style="width: 100%; max-width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-        </div>`
-      );
-    });
-  }
+
 
 });

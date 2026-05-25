@@ -580,7 +580,7 @@ button {
 
 .achievements-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
@@ -1771,5 +1771,265 @@ button {
   
   .enquiry-card {
     padding: 1.5rem;
+  }
+}
+
+/* =========================================================================
+   12. ACADEMIC DIRECTOR SECTION
+   ========================================================================= */
+.academic-director-section {
+  background-color: var(--bg-light-2);
+  padding: 5rem 0;
+}
+
+.director-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.director-profile-card {
+  background-color: var(--bg-light-1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  border-top: 5px solid var(--primary-color);
+  transition: var(--transition-normal);
+  position: sticky;
+  top: 110px;
+  z-index: 10;
+}
+
+.director-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.director-img-wrapper {
+  position: relative;
+  height: 540px;
+  background-color: #cbd5e1;
+}
+
+.director-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.tedx-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: #e11d48; /* Crimson red for TEDx */
+  color: var(--text-light);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.director-card-body {
+  padding: 2rem;
+  text-align: center;
+}
+
+.director-card-body h3 {
+  font-size: 1.65rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.director-card-body .pronouns {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.director-card-body .role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.director-card-body .org {
+  font-size: 1.05rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: var(--text-light) !important;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.linkedin-btn:hover {
+  background-color: #005987;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.director-headline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.director-quote-box {
+  background-color: var(--bg-light-1);
+  border-left: 4px solid var(--secondary-color);
+  padding: 2rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: rgba(224, 107, 32, 0.08);
+}
+
+.director-quote {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.director-quote-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.director-skills {
+  margin-bottom: 2.5rem;
+}
+
+.director-skills h4 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background-color: var(--bg-light-3);
+  color: var(--text-dark);
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+}
+
+.featured-media-section h4 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.featured-media-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  background-color: var(--bg-light-1);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-normal);
+}
+
+.featured-media-card:hover {
+  transform: translateX(5px);
+  border-color: var(--secondary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.media-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(27, 63, 139, 0.08);
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  transition: var(--transition-fast);
+}
+
+.featured-media-card:hover .media-icon {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+.media-info h5 {
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.media-info p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsiveness for Director Section */
+@media (max-width: 992px) {
+  .director-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .director-profile-card {
+    max-width: 480px;
+    margin: 0 auto;
   }
 }
